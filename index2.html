@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billy's Bricks</title>
+    <link rel="icon" type="image/png" href="assets/Single-Brick-icon.png"/>
+    <script src="https://kit.fontawesome.com/f4f77f36e6.js" crossorigin="anonymous"></script>
+    <style>
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width:100%;
+        background:lightblue;
+    }
+    .header h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: gray;
+    }
+    .progress-bar {
+        width: 0%;
+        height: 8px;
+        background: green;
+    }
+    </style>
+</head>
+<body>
+    <Header class="header">
+        <h1>Billys Bricks</h1>
+        <h2>Your one stop shop for all brick-related entertainment</h2>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </Header>
+    <main>    
+    
+        <a href="#" target="_blank">Long Brick Pics</a>
+        <img src="assets/Stacked-bricks-white-background.jpg" alt="3 bricks stacked vertically overlapping at both acute and perpendicular angles to give the impression of carelessness, but we all know better than that! ;)">
+     <p>As everyone knows, the utilitarian use of bricks throughout history is long, detailed and very well documented but emergent scholars have recently discovered if you look in between the pages of our history books, amongst our fellow members of society, there lies a a passion which surpasses mere appreciate for a useful object...</p>
+    <h3>types of Bricks</h3>
+     <ul>
+         <li>Clay bricks</li>
+         <li>cement bricks</li>
+         <li>mud bricks</li>
+         <li>ice bricks</li>
+         <li>interlocking toy bricks</li>
+         <li>minecraft bricks</li>
+         <li>stone bricks</li>
+     </ul>
+     <h2>Top things to build with bricks</h2>
+     <ol start="99" reversed >
+         <li>Buildings</li>
+         <li>Toy spaceships</li>
+         <li>Walls</li>
+         <li>Scale replica of the Great wall of china</li>
+         <li>Bigger bricks</li>
+     </ol>
+     <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+     <a href="">Play some tunes</a>
+    </main>
+    <footer> 
+        <p>Interesting information in my footer</p> 
+        <p> &copy;Milo Silva 2019</p>>
+    </footer>
+    <script>
+        //when user scrolls updates to show overall progress in webpage
+        window.onscroll=function() {updateProgress()};
+        
+        function updateProgress() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            //find the height of the document which is scrollable i.e not currently on screen. (scroll height less height of client window)
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            //progress of scrolling at current location
+            var scrollProgress = (winScroll/height) * 100;
+            document.getElementById("myBar").style.width = scrollProgress + "%";
+        }
+    </script>
+</body>
+
+</html>
